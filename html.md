@@ -22,7 +22,7 @@ https://developer.mozilla.org/en-US/docs/Mozilla_Quirks_Mode_Behavior
 
 * meta
 
-The HTML <meta> Element represents any metadata information that cannot be represented by one of the other meta-related elements (<base>, <link>, <script>, <style> or <title>).
+The HTML <meta> Element represents any metadata information that cannot be represented by one of the other meta-related elements.
 
 1 charset
 
