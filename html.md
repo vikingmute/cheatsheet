@@ -34,6 +34,7 @@ Authors are encouraged to use UTF-8.
 <meta charset='utf-8'>
 ```
 2 http-equiv & content
+
 This enumerated attribute defines the pragma that can alter servers and user-agents behavior
 
 content-language 没用了 可以直接在html标签上加lang属性
@@ -60,6 +61,7 @@ Edge mode tells Internet Explorer to display content in the highest mode availab
 ```
 
 3 name & content
+
 This attribute defines the name of a document-level metadata. 
 一些有关seo的东西 author description keywords 
 
