@@ -101,4 +101,11 @@ console.log(firstChar);
 
 **比较是否相等**
 
+>The identity (===) operator behaves identically to the equality (==) operator except no type conversion is done, and the types must be the same to be considered equal.
+
+==号两边会做转换 ===号不会
+
+
+
+
 **null vs undefined**
