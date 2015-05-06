@@ -103,9 +103,33 @@ console.log(firstChar);
 
 >The identity (===) operator behaves identically to the equality (==) operator except no type conversion is done, and the types must be the same to be considered equal.
 
-==号两边会做转换 ===号不会
+== 号两边会做转换(type conversion) ===号不会
 
+== 的转换规则 
 
+文档在这里 http://es5.github.io/#x9.3
 
+如果两边的值都是基本类型（primitive types） 那么就在两边调用他们的ToNumber方法
 
+> The ECMAScript runtime system performs automatic type conversion as needed. To clarify the semantics of certain constructs it is useful to define a set of conversion abstract operations. These abstract operations are not a part of the language; they are defined here to aid the specification of the semantics of the language. 
+
+注意 这些方法是ECMAScript内部的机制 没法直接调用
+
+不同类型调用ToNumber后的返回
+
+* Undefined --- NaN
+* Null --- +0
+* Boolean --- true to 1 false to +0
+* Number --- 不变
+* String ---- 很复杂 看文档吧 http://es5.github.io/#x9.3.1
+
+现在就可以搞清楚了
+
+```javascript
+
+123 == '123' //true
+true == 1 //true
+false == 0 // true
+```
 **null vs undefined**
+**不同类型转换**
